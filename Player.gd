@@ -6,6 +6,7 @@ var jumpAmount : int = 400
 var velocity : Vector2 = Vector2()
 
 onready var sprite : Sprite = get_node("Sprite")
+onready var ui : Control = get_node("/root/MainScene/CanvasLayer/UI")
 
 func _physics_process(delta):
 	velocity.x = 0
@@ -31,4 +32,9 @@ func _physics_process(delta):
 		sprite.flip_h = false
 
 func die():
+	Global.score = 0
 	get_tree().reload_current_scene()
+
+func add_score(amount):
+	Global.add_score(amount)
+	ui.updateScoreLabel()
