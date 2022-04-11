@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/236320__szpury__vanished-002-41k.ogg-b80409ebe8da2815586cddc896624b87.oggstr"
+
+[deps]
+
+source_file="res://Audio/236320__szpury__vanished-002-41k.ogg"
+dest_files=[ "res://.import/236320__szpury__vanished-002-41k.ogg-b80409ebe8da2815586cddc896624b87.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

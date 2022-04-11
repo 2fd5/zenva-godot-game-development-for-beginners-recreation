@@ -8,4 +8,3 @@ func _on_Coin_body_entered(body):
 		body.add_score(rupees)
 		sound.play_coin_SFX()
 		queue_free()
-
