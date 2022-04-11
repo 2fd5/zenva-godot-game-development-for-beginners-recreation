@@ -1,6 +1,7 @@
 extends Area2D
 
-export var distance_x : int = 100
+export var distanceLeft : int = 120
+export var distanceRight : int = 20
 export var speed : int = 60
 export var rotationSpeed : int = 60
 
@@ -10,8 +11,8 @@ var startX : int
 var endX : int
 
 func _ready():
-	startX = position.x - distance_x
-	endX = position.x + distance_x
+	startX = position.x - distanceLeft
+	endX = position.x + distanceRight
 
 func _process(delta):
 	position.x += speed * delta
