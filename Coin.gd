@@ -8,4 +8,4 @@ func _on_Coin_body_entered(body):
 		queue_free()
 
 func add_score(amount):
-	Global.score += amount
+	Global.add_score(amount)

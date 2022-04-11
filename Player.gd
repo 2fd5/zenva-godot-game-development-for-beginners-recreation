@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-export var speed : int = 200
-var gravity : int = 500
-var jumpAmount : int = 300
+export var speed : int = 250
+var gravity : int = 600
+var jumpAmount : int = 400
 var velocity : Vector2 = Vector2()
 
 onready var sprite : Sprite = get_node("Sprite")
