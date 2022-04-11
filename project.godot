@@ -14,6 +14,10 @@ config/name="zenva-godot-game-development-for-beginners-recreation"
 run/main_scene="res://MainScene.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://Global.gd"
+
 [input]
 
 move_left={
