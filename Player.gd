@@ -5,6 +5,7 @@ var gravity : int = 500
 var jumpAmount : int = 300
 var velocity : Vector2 = Vector2()
 
+onready var sprite : Sprite = get_node("Sprite")
 
 func _physics_process(delta):
 	velocity.x = 0
@@ -23,3 +24,8 @@ func _physics_process(delta):
 
 	if Input.is_action_pressed("jump") and is_on_floor():
 		velocity.y -= jumpAmount
+
+	if velocity.x < 0:
+		sprite.flip_h = true
+	if velocity.x > 0:
+		sprite.flip_h = false
